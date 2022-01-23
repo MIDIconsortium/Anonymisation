@@ -11,10 +11,15 @@ To anonymise a single dicom file and save the resulting dicom file, simply run t
 By default, patient age, date of birth, and sex are retained, but patient name, address, hospital ID and hospital accession number are removed. This can be changed by passing additional boolean arguments to run.py:
 
 --keep_age
+
 --keep_sex
+
 --keep_name
+
 --keep_address
+
 --keep_id
+
 --keep_accession
 
 e.g., `python run.py -i /path/to/dicom/file -o /path/to/saved/dicom/file --keep_age False` etc.
